@@ -12,9 +12,7 @@ from unittest.mock import patch, MagicMock, Mock
 from test_utils import create_validated_mock, _validate_log_message
 
 # Import the module under test
-# This will be imported after implementation
-with pytest.raises(ImportError):
-    from prompter.logging import PrompterLogger
+from prompter.logging import PrompterLogger
 
 # Mock the module for testing with enhanced validation
 class MockPrompterLogger:
